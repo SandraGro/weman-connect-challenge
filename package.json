@@ -27,5 +27,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "---",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Serlych/weman-connect-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Serlych/weman-connect-challenge/issues"
+  },
+  "homepage": "https://github.com/Serlych/weman-connect-challenge#readme"
 }

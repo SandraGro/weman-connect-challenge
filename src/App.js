@@ -11,6 +11,7 @@ class App extends React.Component {
     this.state = {
       current: board.current,
       mines: board.mines,
+      contador: 0,
     };
   }
 
@@ -51,6 +52,16 @@ class App extends React.Component {
     }
 
     // TODO: Did Corgi stepped in a Reactive material?
+    
+    
+    if (mines[current.row][current.column] === 1) {
+       mines[current.row][current.column] = 0;
+       this.setState({contador: this.state.contador+1}) 
+      }
+      
+      if(this.state.contador === 7){
+        alert('Ganaste');
+      }
 
     this.setState({ current, mines });
     e.preventDefault();
